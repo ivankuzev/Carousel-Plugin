@@ -1,61 +1,61 @@
-<ul>
-<li>Functional Specifications/Requirements:
-<li>Options:
-<li>orientation (how to orient the carousel )
-<li>Default: ''(means autodetect)
-<li>Possible values
-<li>'vertical'
-<li>'horizontal' 
-<li>classItems (Aditional class to add to items)
-<li>Default: ''
-<li>classEnds (Aditional class to add to ends)
-<li>Default: ''
-<li>navigation (what kind of ends and scroolers shoud the plugin have)
-<li>Default:{ends:'standart',sides:'sliderboth'}
-<li>step (how many items to move the focus when you click on cap.or invoke _viewforward/_viewback)
-<li>Default: 3 
-<li>Possible values
-<li>Integer value
-<li>animation (options for the animation)
-<li>Default: '{easing:'swing',speed:'slow'}'
-<li>Possible easings
-<li>'linear'
-<li>'swing'
-<li>maybe something other that cvan be used with the jquery.animate method 
-<li>icons 
-<li>Default: {
-<li>up: 'ui-icon-circle-triangle-n',  down: 'ui-icon-circle-triangle-s', left: 'ui-icon-circle-triangle-w' right: 'ui-icon-circle-triangle-e'}    
-<li>accepts string or (jquery) object // needs testing for the jquery
-<li>activeItem ((jquery)item which is active)// todo
-<li>getter and setter
-<li>it shoud accept :
-<li>int index value
-<li>DOMelement
-<li>jquery object 
-<li>focusItem ((jquery) item which is on focus)//todo
-<li>getter and setter
-<li>it shoud accept :
-<li>int index value
-<li>DOMelement
-<li>jquery object 
-<li>callbacks/events 
-<li>for now all callback are null by default
-<li>hoverItemIn (event,data)(when cursor moves into an item)
-<li>data.target = the item which was hovered to; 
-<li>hoverItemOut (event,data) (when cursor moves out of an item)
-<li>data.target = the item which was hovered out of;
-<li>hoverEndIn (event,data) (when cursor moves into a cap)
-<li>data.target = the endwhich was hovered to 
-<li>hoverEndOut (event,data) (when cursor moves out of a cap)
-<li>data.target = the end that was hovered out of
-<li>click  (event,data) (when you click on an item)
-<li>data.target = the item which was clicked
-<li>Methods 
-<li>refresh
-<li>called once when creating 
-<li>takes any new items into the carousel 
-<li>destroy //todo 
-</ul>
+<dl>
+<dt>Functional Specifications/Requirements:</dt> 
+<dt>Options:</dt> 
+<dt>orientation (how to orient the carousel )</dt> 
+<dt>Default: ''(means autodetect)</dt> 
+<dt>Possible values</dt> 
+<dt>'vertical'</dt> 
+<dt>'horizontal' </dt> 
+<dt>classItems (Aditional class to add to items)</dt> 
+<dt>Default: ''</dt> 
+<dt>classEnds (Aditional class to add to ends)</dt> 
+<dt>Default: ''</dt> 
+<dt>navigation (what kind of ends and scroolers shoud the plugin have)</dt> 
+<dt>Default:{ends:'standart',sides:'sliderboth'}</dt> 
+<dt>step (how many items to move the focus when you click on cap.or invoke _viewforward/_viewback)</dt> 
+<dt>Default: 3</dt>  
+<dt>Possible values</dt> 
+<dt>Integer value</dt> 
+<dt>animation (options for the animation)</dt> 
+<dt>Default: '{easing:'swing',speed:'slow'}'</dt> 
+<dt>Possible easings</dt> 
+<dt>'linear'</dt> 
+<dt>'swing'</dt> 
+<dt>maybe something other that cvan be used with the jquery.animate method</dt>  
+<dt>icons </dt> 
+<dt>Default: {</dt> 
+<dt>up: 'ui-icon-circle-triangle-n',  down: 'ui-icon-circle-triangle-s', left: 'ui-icon-circle-triangle-w' right: 'ui-icon-circle-triangle-e'} </dt>    
+<dt>accepts string or (jquery) object // needs testing for the jquery</dt> 
+<dt>activeItem ((jquery)item which is active)// todo</dt> 
+<dt>getter and setter</dt> 
+<dt>it shoud accept :</dt> 
+<dt>int index value</dt> 
+<dt>DOMelement</dt> 
+<dt>jquery object</dt>  
+<dt>focusItem ((jquery) item which is on focus)//todo</dt> 
+<dt>getter and setter</dt> 
+<dt>it shoud accept :</dt> 
+<dt>int index value</dt> 
+<dt>DOMelement</dt> 
+<dt>jquery object</dt>  
+<dt>callbacks/events</dt>  
+<dt>for now all callback are null by default</dt> 
+<dt>hoverItemIn (event,data)(when cursor moves into an item)</dt> 
+<dt>data.target = the item which was hovered to; </dt> 
+<dt>hoverItemOut (event,data) (when cursor moves out of an item)</dt> 
+<dt>data.target = the item which was hovered out of;</dt> 
+<dt>hoverEndIn (event,data) (when cursor moves into a cap)</dt> 
+<dt>data.target = the endwhich was hovered to</dt>  
+<dt>hoverEndOut (event,data) (when cursor moves out of a cap)</dt> 
+<dt>data.target = the end that was hovered out of</dt> 
+<dt>click  (event,data) (when you click on an item)</dt> 
+<dt>data.target = the item which was clicked</dt> 
+<dt>Methods</dt> 
+<dt>refresh</dt> 
+<dt>called once when creating</dt>  
+<dt>takes any new items into the carousel </dt> 
+<dt>destroy //todo</dt> 
+</dl>
 <pre>
 4 - Markup & Style:
    4.1 Initial markup examples
