@@ -1,0 +1,32 @@
+.ik-carousel, .ik-carousel ul{
+    margin: 0px;   
+    padding: 0px; 
+    border: none;  
+    outline: 0px;   
+    list-style-type:none;  
+}   
+li.ik-carousel-item{
+    float:left;
+    width:80px;  
+    height:80px;  
+    cursor:pointer;
+}
+.ik-carousel > div{
+    float:left;
+    overflow:hidden;    
+
+}
+.ik-carousel-horizontal > div.ik-carousel-end-1,.ik-carousel-horizontal > div.ik-carousel-end-2{
+    width:22px;
+}
+.ik-carousel-vertical > div.ik-carousel-end-1,.ik-carousel-vertical > div.ik-carousel-end-2{
+    height:22px;  
+}
+ul.ik-carousel-items{
+    position:relative;
+}
+li.ik-carousel-item > *{
+
+    display:inline-block;  
+}
+/*ik-carousel-disposable for helping in the garbage collection*/
