@@ -1,60 +1,62 @@
-3 - Functional Specifications/Requirements:
-Options:
-orientation (how to orient the carousel )
-Default: ''(means autodetect)
-Possible values
-'vertical'
-'horizontal' 
-classItems (Aditional class to add to items)
-Default: ''
-classEnds (Aditional class to add to ends)
-Default: ''
-navigation (what kind of ends and scroolers shoud the plugin have)
-Default:{ends:'standart',sides:'sliderboth'}
-step (how many items to move the focus when you click on cap.or invoke _viewforward/_viewback)
-Default: 3 
-Possible values
-Integer value
-animation (options for the animation)
-Default: '{easing:'swing',speed:'slow'}'
-Possible easings
-'linear'
-'swing'
-maybe something other that cvan be used with the jquery.animate method 
-icons 
-Default: {
-up: 'ui-icon-circle-triangle-n',  down: 'ui-icon-circle-triangle-s', left: 'ui-icon-circle-triangle-w' right: 'ui-icon-circle-triangle-e'}    
-accepts string or (jquery) object // needs testing for the jquery
-activeItem ((jquery)item which is active)// todo
-getter and setter
-it shoud accept :
-int index value
-DOMelement
-jquery object 
-focusItem ((jquery) item which is on focus)//todo
-getter and setter
-it shoud accept :
-int index value
-DOMelement
-jquery object 
-callbacks/events 
-for now all callback are null by default
-hoverItemIn (event,data)(when cursor moves into an item)
-data.target = the item which was hovered to; 
-hoverItemOut (event,data) (when cursor moves out of an item)
-data.target = the item which was hovered out of;
-hoverEndIn (event,data) (when cursor moves into a cap)
-data.target = the endwhich was hovered to 
-hoverEndOut (event,data) (when cursor moves out of a cap)
-data.target = the end that was hovered out of
-click  (event,data) (when you click on an item)
-data.target = the item which was clicked
-Methods 
-refresh
-called once when creating 
-takes any new items into the carousel 
-destroy //todo 
- 
+<ul>
+<li>Functional Specifications/Requirements:
+<li>Options:
+<li>orientation (how to orient the carousel )
+<li>Default: ''(means autodetect)
+<li>Possible values
+<li>'vertical'
+<li>'horizontal' 
+<li>classItems (Aditional class to add to items)
+<li>Default: ''
+<li>classEnds (Aditional class to add to ends)
+<li>Default: ''
+<li>navigation (what kind of ends and scroolers shoud the plugin have)
+<li>Default:{ends:'standart',sides:'sliderboth'}
+<li>step (how many items to move the focus when you click on cap.or invoke _viewforward/_viewback)
+<li>Default: 3 
+<li>Possible values
+<li>Integer value
+<li>animation (options for the animation)
+<li>Default: '{easing:'swing',speed:'slow'}'
+<li>Possible easings
+<li>'linear'
+<li>'swing'
+<li>maybe something other that cvan be used with the jquery.animate method 
+<li>icons 
+<li>Default: {
+<li>up: 'ui-icon-circle-triangle-n',  down: 'ui-icon-circle-triangle-s', left: 'ui-icon-circle-triangle-w' right: 'ui-icon-circle-triangle-e'}    
+<li>accepts string or (jquery) object // needs testing for the jquery
+<li>activeItem ((jquery)item which is active)// todo
+<li>getter and setter
+<li>it shoud accept :
+<li>int index value
+<li>DOMelement
+<li>jquery object 
+<li>focusItem ((jquery) item which is on focus)//todo
+<li>getter and setter
+<li>it shoud accept :
+<li>int index value
+<li>DOMelement
+<li>jquery object 
+<li>callbacks/events 
+<li>for now all callback are null by default
+<li>hoverItemIn (event,data)(when cursor moves into an item)
+<li>data.target = the item which was hovered to; 
+<li>hoverItemOut (event,data) (when cursor moves out of an item)
+<li>data.target = the item which was hovered out of;
+<li>hoverEndIn (event,data) (when cursor moves into a cap)
+<li>data.target = the endwhich was hovered to 
+<li>hoverEndOut (event,data) (when cursor moves out of a cap)
+<li>data.target = the end that was hovered out of
+<li>click  (event,data) (when you click on an item)
+<li>data.target = the item which was clicked
+<li>Methods 
+<li>refresh
+<li>called once when creating 
+<li>takes any new items into the carousel 
+<li>destroy //todo 
+</ul>
+<pre>
 4 - Markup & Style:
    4.1 Initial markup examples
   <div>
@@ -69,7 +71,7 @@ it works with DIV UL  and probably some other elements if it dont work with some
 
 CSS markup
 look at the css file in the demo
-
+</pre>
 
 
 //todo help wanted
