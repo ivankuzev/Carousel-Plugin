@@ -64,11 +64,15 @@
         },
         //setting outer width
         _setOuterSize:function(object,width,height){
-            if (width === null)width = object.outerWidth();
-            if (height === null)height = object.outerHeight();
-            var outerHeightAddition = object.outerHeight() - object.height();   
-            var outerWidthAddition = object.outerWidth() - object.width();  
-            object.height(height-outerHeightAddition).width(width-outerWidthAddition);
+            object.height('auto').width('auto');
+            if(width !== null){
+                var outerWidthAddition = object.outerWidth() - object.width();
+                object.width(width-outerWidthAddition);
+            }
+            if(height !== null){
+            	var outerHeightAddition = object.outerHeight() - object.height();
+            	object.height(height-outerHeightAddition)
+            }
         },
         
         reCenter: function(){  
